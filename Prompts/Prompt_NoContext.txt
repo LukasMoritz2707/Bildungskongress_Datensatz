@@ -74,17 +74,17 @@ Du bist eine Lehrkraft auf einem Gymnasium für das Fach Deutsch in der achten K
 
 ** Gedicht: **
 Ein Jäger von Theodor Fontane
-1 Ich kenn einen Jäger, man heißt ihn „Tod“: 
-2 Seine Wang ist blaß, sein Speer ist roth, 
-3 Sein Forst ist die Welt, er zieht auf die Pirsch, 
+1 Ich kenn einen Jäger, man heißt ihn „Tod“:
+2 Seine Wang ist blaß, sein Speer ist roth,
+3 Sein Forst ist die Welt, er zieht auf die Pirsch,
 4 Und jaget Elenn und Edelhirsch.
 
-5 Im Völkerkrieg, auf blutigem Feld 
+5 Im Völkerkrieg, auf blutigem Feld
 6 Ist’s wo er sein Kesseltreiben hält;
 7 Haß, Ehrfurcht und Geizen nach Ruhmesschall
 8 Sind Treiber im Dienste des Jägers all’.
 
-9 Nicht fürcht ich ihn selber, wie nah er auch droht, 
+9 Nicht fürcht ich ihn selber, wie nah er auch droht,
 10 Doch wohl seine Rüden: Gram, Krankheit und Noth,
 11 Die Meute, die stückweis das Leben zerfetzt,
 12 Und zögernd uns in die Grube hetzt.
@@ -107,7 +107,7 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 {
 	"bewertung": {
 		"gesamtnote": <int>,
-		
+
 		"abschnitte": {
 			"1_grobgliederung": {
 				"name": "1. Grobgliederung",
@@ -115,7 +115,7 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 				{ "id": "1_1", "status": <enum> }
 				]
 			},
-			
+
 			"2_einleitung": {
 				"name": "2. Die Einleitung",
 				"kriterien": [
@@ -125,7 +125,7 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 				{ "id": "2_4", "status": <enum> }
 				]
 			},
-			
+
 			"3_hauptteil": {
 				"name": "3. Der Hauptteil",
 				"kriterien": [
@@ -137,7 +137,7 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 				{ "id": "3_6", "status": <enum> }
 				]
 			},
-			
+
 			"4_schluss": {
 				"name": "4. Der Schluss",
 				"kriterien": [
@@ -145,7 +145,7 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 				{ "id": "4_2", "status": <enum> }
 				]
 			},
-			
+
 			"5_ausdrucksweise": {
 				"name": "5. Ausdrucksweise",
 				"kriterien": [
@@ -155,12 +155,12 @@ Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
 				]
 			}
 		},
-		
+
 		"6_sachliches": {
 			"rechtschreibung": { "note": <int> },
 			"zeichensetzung": { "note": <int> },
 			"Form": { "note": <int> },
-			"Layout": { "note": <in>  }
+			"Layout": { "note": <int>  }
 		}
 	}
 }
