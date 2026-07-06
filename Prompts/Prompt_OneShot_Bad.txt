@@ -1,0 +1,249 @@
+Du bist eine Lehrkraft auf einem Gymnasium für das Fach Deutsch in der achten Klassen. Du sollst eine Interpretation zu dem Gedicht ``Ein Jäger'' von Theodore Fontane bewerten. Nutze dafür das folgende Bewertungsraster:
++--------------------------------------------+---------+-------------------+-----------------+
+| Kriterium                                  | Erfüllt | Teilweise erfüllt | Nicht erfüllt   |
++--------------------------------------------+---------+-------------------+-----------------+
+| 1. Grobgliederung                          |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Der Aufsatz ist klar in Einleitung -       |         |                   |                 |
+| Hauptteil - Schluss gegliedert.            |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| 2. Einleitung                              |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Basissatz vollständig (Titel, Autor, Jahr, |         |                   |                 |
+| Textsorte, Kernaussage)                    |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Deutungshypothese ist enthalten und klar   |         |                   |                 |
+| formuliert                                 |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Kurze Inhaltszusammenfassung des Gedichts  |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Beschreibung der äußeren Form (Strophen,   |         |                   |                 |
+| Verse, Reim, Metrum etc.)                  |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| 3. Der Hauptteil                           |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Jede Strophe wird in einem eigenen Absatz  |         |                   |                 |
+| behandelt                                  |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Inhalt jeder Strophe wird verständlich     |         |                   |                 |
+| beschrieben                                |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Bezug zum Titel wird hergestellt           |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Sprachliche Bilder                         |         |                   |                 |
+| (Metapher, Personifikation etc.) werden    |         |                   |                 |
+| erkannt und erklärt                        |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Weitere Stilmittel / rhetorische Figuren   |         |                   |                 |
+| werden einbezogen                          |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Form und Inhalt werden sinnvoll miteinander|         |                   |                 |
+| verknüpft                                  |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| 4. Der Schluss                             |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Kurze Zusammenfassung der wesentlichen     |         |                   |                 |
+| Ergebnisse                                 |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Zentrale Deutung / Aussage des Gedichts    |         |                   |                 |
+| wird noch einmal hervorgehoben             |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| 5. Ausdrucksweise                          |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Beschreibend-argumentative                 |         |                   |                 |
+| Sprache                                    |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Treffende fachsprachliche                  |         |                   |                 |
+| Ausdrücke                                  |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| Keine umgangssprachlichen                  |         |                   |                 |
+| Formulierungen                             |         |                   |                 |
++--------------------------------------------+---------+-------------------+-----------------+
+| 6. Sachliches                                                                              |
++------------------------------+---------+---------+---------+---------+----------+----------+
+| Note                         |    1    |    2    |    3    |    4    |    5     |    6     |
++------------------------------+---------+---------+---------+---------+----------+----------+
+| Rechtschreibung              |         |         |         |         |          |          |
++------------------------------+---------+---------+---------+---------+----------+----------+
+| Zeichensetzung               |         |         |         |         |          |          |
++------------------------------+---------+---------+---------+---------+----------+----------+
+| Form                         |         |         |         |         |          |          |
++------------------------------+---------+---------+---------+---------+----------+----------+
+| Layout                       |         |         |         |         |          |          |
++------------------------------+---------+---------+---------+---------+----------+----------+
+
+** Gedicht: **
+Ein Jäger von Theodor Fontane
+1 Ich kenn einen Jäger, man heißt ihn „Tod“:
+2 Seine Wang ist blaß, sein Speer ist roth,
+3 Sein Forst ist die Welt, er zieht auf die Pirsch,
+4 Und jaget Elenn und Edelhirsch.
+
+5 Im Völkerkrieg, auf blutigem Feld
+6 Ist’s wo er sein Kesseltreiben hält;
+7 Haß, Ehrfurcht und Geizen nach Ruhmesschall
+8 Sind Treiber im Dienste des Jägers all’.
+
+9 Nicht fürcht ich ihn selber, wie nah er auch droht,
+10 Doch wohl seine Rüden: Gram, Krankheit und Noth,
+11 Die Meute, die stückweis das Leben zerfetzt,
+12 Und zögernd uns in die Grube hetzt.
+
+**Gedichtsinterpretation: **
+
+	Dieses Gedicht wurde von Theodor Fontane geschrieben, einem deutschen Schriftsteller und Journalisten, der im 19. Jahrhundert lebte. Fontane zählte zu den bedeutendste Vertretern des Realismus und ist insbesondere bekannt durch seine Berliner Schilderungen und Zeitkritik.
+
+	Das Gedicht „Ein Jäger“ hinterlässt beim ersten lesen einen düsteren und ernsten Eindruck. Der Jäger, der im Gedicht als Metapher für die Figur des Todes dargestellt wird sorgt für Unbehagen. Sein bleiches Aussehen und seine rote Lanze erzeugen eine gruselige, unheimliche Atmosphäre. Er streift durch die Welt und streckt alle Lebewesen nieder - ausdrucksstarke Bilder die die allgegenwärtige und unausweichliche Präsenz des Todes illustrieren.
+
+	Im zweiten und dritten Teil bringt der Autor Bezug zu Krieg, Hass und menschlichem Elend her und weist auf die zerstörerischen Folgen hin, die durch negative Emotionen und Krisen verursacht werden können. Besonder zum Ausdruck kommt diese durch die Metaper der „Rüden“, die stellvertretend für leiden in Form von Gram, Krankheit und Not stehen. Das wirkt irgendwie ziemlich bedrückend.
+
+	Interpretiert man das Gedicht, so lässt sich sage, dass das lyrische Ich den Tod selbst, repräsentiert durch den Jäger nicht fürchtet. Vielmehr sind es die Qualen und Leiden, die mit Krankheit und Not einhergehen und das Leben zermürben. Das lyrische ich stellt dabei fest, dass diese Umstände uns allmählich dem Tod näher bringen. Das finde ich eigentlich die wichtigste Aussage des Gedichts.
+
+	Formal betrachtet besteht das Gedicht aus drei Strophen mit jeweils vier Versen, womit eine klare und geordnet Struktur gegeben ist. Im Bezug auf die Sprache fällt auf, dass das Gedicht in einer recht formellen und ernsten Weise verfasst ist, was dem zentralen Thema - dem Tod und den damit verbundenen düsteren Themen - gut passt. Sprachliche Bilder sowie Metapern heben dabei die dramatische Wirkung des Gedichts hervor und erzeugen eine eindringliche und zugleich poetische Atmosphäre. Insgesamt ist das Gedicht zwar etwas düster aber trotzdem ganz interessant.
+
+** Ende Gedichtinterpretation **
+
+Nutze die folgenden JSON Vorlage als **Output-Vorlage:**
+{
+	"bewertung": {
+		"gesamtnote": <int>,
+
+		"abschnitte": {
+			"1_grobgliederung": {
+				"name": "1. Grobgliederung",
+				"kriterien": [
+				{ "id": "1_1", "status": <enum> }
+				]
+			},
+
+			"2_einleitung": {
+				"name": "2. Die Einleitung",
+				"kriterien": [
+				{ "id": "2_1", "status": <enum> },
+				{ "id": "2_2", "status": <enum> },
+				{ "id": "2_3", "status": <enum> },
+				{ "id": "2_4", "status": <enum> }
+				]
+			},
+
+			"3_hauptteil": {
+				"name": "3. Der Hauptteil",
+				"kriterien": [
+				{ "id": "3_1", "status": <enum> },
+				{ "id": "3_2", "status": <enum> },
+				{ "id": "3_3", "status": <enum> },
+				{ "id": "3_4", "status": <enum> },
+				{ "id": "3_5", "status": <enum> },
+				{ "id": "3_6", "status": <enum> }
+				]
+			},
+
+			"4_schluss": {
+				"name": "4. Der Schluss",
+				"kriterien": [
+				{ "id": "4_1", "status": <enum> },
+				{ "id": "4_2", "status": <enum> }
+				]
+			},
+
+			"5_ausdrucksweise": {
+				"name": "5. Ausdrucksweise",
+				"kriterien": [
+				{ "id": "5_1", "status": <enum> },
+				{ "id": "5_2", "status": <enum> },
+				{ "id": "5_3", "status": <enum> }
+				]
+			}
+		},
+
+		"6_sachliches": {
+			"rechtschreibung": { "note": <int> },
+			"zeichensetzung": { "note": <int> },
+			"Form": { "note": <int> },
+			"Layout": { "note": <int>  }
+		}
+	}
+}
+
+<enum> 1: Erfüllt, 2: Teilweise Erfüllt, 3: Nicht erfüllt
+<int> Notenskale 1 - 6, 1 Sehr gut, 6 ungenügend
+
+** Beispiel: **
+
+** Gedichtsinterpretation: **
+
+Das Gedicht „Ein Jäger“ von Theodor Fontane aus dem Jahr 1889 ist ein Gedicht. Es geht darum, dass der Tot mit einem Jäger verglichen wird, der Menschen verfolgte. Die Aussage des Gedichts ist, dass der Tod zum Leben dazugehört und Menschen ihm nicht entkommen können. Ich denke, dass Fontane zeigen möchte, dass der Tot zwar nicht immer direkt gefürchtet werden muss, aber seine Folgen für Menschen schlimm sind.
+
+Das Gedicht besteht aus drei Strophen mit jeweils vier Versen. Es gibt Reime, aber das Metrum ist nicht genauer zu erkennen. Die Sprache wirkt teilweise aldmodisch. Der Titel „Ein Jäger“ passt zum Inhalt, weil der Tot im Gedicht wie ein Jäger dargestellt wird.
+
+Zusammenfassend kann man sagen, dass das Gedicht den Tod als einen Jäger zeigt, der überall auf der Welt unterwegs ist. Die wichtigste Aussage ist, dass Menschen dem Tod nicht ausweichen können. Die Darstellung des Todes als Jäger macht deutlich, dass er eine starke Macht besitzt.
+
+In der Ersten strophe wird beschrieben, dass es einen Jäger gibt, der eigentlich der Tot ist. Er hat eine blaße Wange und einen roten Speer. Dadurch wirkt er unheimlich. Der Wald, in dem er jagt, ist die ganze Welt. Die Tiere, die er jagt, stehen wahrscheinlich für Menschen.
+
+In der Zweiten strophe geht es um Krieg. Der Tod jagt dort besonders viel Menschen. Wörter wie „blutigem Feld“ zeigen, dass der Krieg grausam ist. Außerdem werden Hass und Ruhm als Helfer des Todes dargestellt. Das ist eine Personifikation, weil Gefühle wie Menschen handeln können.
+
+Die Dritte strophe zeigte, dass der Sprecher keine große Angst vor dem Tod selbst hat. Er fürchtet aber die Dinge, die zum Tot führen können, wie Krankheit und Not. Die „Meute“ ist ein Bild dafür, dass diese Probleme das Leben langsam zerstört. Hier benutzt Fontane eine Metaper.
+
+
+** Bewertung **
+
+{
+  "bewertung": {
+    "gesamtnote": 3,
+
+    "abschnitte": {
+      "1_grobgliederung": {
+        "name": "1. Grobgliederung",
+        "kriterien": [
+          { "id": "1_1", "status": 3 }
+        ]
+      },
+
+      "2_einleitung": {
+        "name": "2. Die Einleitung",
+        "kriterien": [
+          { "id": "2_1", "status": 2 },
+          { "id": "2_2", "status": 2 },
+          { "id": "2_3", "status": 3 },
+          { "id": "2_4", "status": 2 }
+        ]
+      },
+
+      "3_hauptteil": {
+        "name": "3. Der Hauptteil",
+        "kriterien": [
+          { "id": "3_1", "status": 2 },
+          { "id": "3_2", "status": 2 },
+          { "id": "3_3", "status": 2 },
+          { "id": "3_4", "status": 2 },
+          { "id": "3_5", "status": 3 },
+          { "id": "3_6", "status": 3 }
+        ]
+      },
+
+      "4_schluss": {
+        "name": "4. Der Schluss",
+        "kriterien": [
+          { "id": "4_1", "status": 2 },
+          { "id": "4_2", "status": 2 }
+        ]
+      },
+
+      "5_ausdrucksweise": {
+        "name": "5. Ausdrucksweise",
+        "kriterien": [
+          { "id": "5_1", "status": 2 },
+          { "id": "5_2", "status": 3 },
+          { "id": "5_3", "status": 3 }
+        ]
+      }
+    },
+
+    "6_sachliches": {
+      "rechtschreibung": { "note": 4 },
+      "zeichensetzung": { "note": 4 },
+      "Form": { "note": 3 },
+      "Layout": { "note": 3 }
+    }
+  }
+}

@@ -1,5 +1,7 @@
-folder = "NoContext_ZeroShot/ChatGPT" #Change Directory to quickly generate .json files
+FOLDER_NAME = "Sex_ZeroShot"
 
-for i in range(0,20):
-    with open(f"{folder}/{i}.json", "w") as f:
-        pass
+for folders in ["Gemini", "ChatGPT", "Grok", "DeepSeek"]:
+    folder = f"{FOLDER_NAME}/{folders}"
+    for i in range(0,20):
+        with open(f"{folder}/{i}.json", "w") as f:
+            pass

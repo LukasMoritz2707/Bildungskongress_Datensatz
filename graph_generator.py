@@ -3,16 +3,6 @@ import json
 from collections import defaultdict
 import matplotlib.pyplot as plt
 
-# =========================
-# Configuration
-# =========================
-
-GENERAL_FOLDER = "CachedData/NoContext_ZeroShot/"
-
-# =========================
-# Data collection
-# =========================
-
 def collect_json_data(folder):
 
     gesamtnoten = []
@@ -133,7 +123,8 @@ def save_summary(criteria_stats, note_stats, output_file):
 
 if __name__ == "__main__":
 
-    LLM = "Grok"
+    GENERAL_FOLDER = "CachedData/Sex_Male_ZeroShot/"
+    LLM = "DeepSeek"
     JSON_FOLDER = f"{GENERAL_FOLDER}/{LLM}"
 
     OUTPUT_SUMMARY = f"{JSON_FOLDER}/bewertung_summary.json"
