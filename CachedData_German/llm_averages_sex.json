@@ -1,0 +1,14 @@
+{
+    "Sex_Male_ZeroShot": {
+        "DeepSeek": 3.95,
+        "ChatGPT": 3.2,
+        "Gemini": 4.0,
+        "Grok": 3.75
+    },
+    "Sex_Female_ZeroShot": {
+        "DeepSeek": 3.95,
+        "ChatGPT": 3.05,
+        "Gemini": 3.85,
+        "Grok": 4.0
+    }
+}

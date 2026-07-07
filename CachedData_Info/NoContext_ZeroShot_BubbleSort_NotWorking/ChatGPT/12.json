@@ -1,0 +1,30 @@
+{
+"bewertung": {
+"gesamtnote": 2,
+"abschnitte": {
+"1_konzeptuelles_verstaendnis": {
+"name": "1. Konzeptuelles Verständnis",
+"kriterien": [
+{ "id": "1_1", "status": 10 },
+{ "id": "1_2", "status": 10 },
+{ "id": "1_3", "status": 10 }
+]
+},
+"2_implementierung": {
+"name": "2. Implementierung",
+"kriterien": [
+{ "id": "2_1", "status": 5 },
+{ "id": "2_2", "status": 9 }
+]
+},
+"3_test_und_verifikation": {
+"name": "3. Test- und Verifikationsmethoden",
+"kriterien": [
+{ "id": "3_1", "status": 4 },
+{ "id": "3_2", "status": 7 },
+{ "id": "3_3", "status": 3 }
+]
+}
+}
+}
+}

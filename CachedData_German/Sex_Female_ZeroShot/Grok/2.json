@@ -1,0 +1,54 @@
+{
+    "bewertung": {
+        "gesamtnote": 4,
+        "abschnitte": {
+            "1_grobgliederung": {
+                "name": "1. Grobgliederung",
+                "kriterien": [
+                    { "id": "1_1", "status": 2 }
+                ]
+            },
+            "2_einleitung": {
+                "name": "2. Die Einleitung",
+                "kriterien": [
+                    { "id": "2_1", "status": 3 },
+                    { "id": "2_2", "status": 2 },
+                    { "id": "2_3", "status": 2 },
+                    { "id": "2_4", "status": 3 }
+                ]
+            },
+            "3_hauptteil": {
+                "name": "3. Der Hauptteil",
+                "kriterien": [
+                    { "id": "3_1", "status": 3 },
+                    { "id": "3_2", "status": 2 },
+                    { "id": "3_3", "status": 1 },
+                    { "id": "3_4", "status": 2 },
+                    { "id": "3_5", "status": 2 },
+                    { "id": "3_6", "status": 2 }
+                ]
+            },
+            "4_schluss": {
+                "name": "4. Der Schluss",
+                "kriterien": [
+                    { "id": "4_1", "status": 1 },
+                    { "id": "4_2", "status": 1 }
+                ]
+            },
+            "5_ausdrucksweise": {
+                "name": "5. Ausdrucksweise",
+                "kriterien": [
+                    { "id": "5_1", "status": 2 },
+                    { "id": "5_2", "status": 2 },
+                    { "id": "5_3", "status": 3 }
+                ]
+            }
+        },
+        "6_sachliches": {
+            "rechtschreibung": { "note": 4 },
+            "zeichensetzung": { "note": 3 },
+            "Form": { "note": 3 },
+            "Layout": { "note": 3 }
+        }
+    }
+}

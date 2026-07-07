@@ -1,0 +1,42 @@
+{
+    "NoContext_ZeroShot": {
+        "DeepSeek": 3.85,
+        "ChatGPT": 2.68,
+        "Gemini": 3.8,
+        "Grok": 3.9
+    },
+    "NoContext_OneShot_Good": {
+        "DeepSeek": 3.45,
+        "ChatGPT": 2.95,
+        "Gemini": 3.1,
+        "Grok": 3.9
+    },
+    "NoContext_OneShot_Bad": {
+        "DeepSeek": 3.9,
+        "ChatGPT": 3.11,
+        "Gemini": 3.5,
+        "Grok": 4.0
+    },
+    "Sex_Male_ZeroShot": {
+        "DeepSeek": 3.95,
+        "ChatGPT": 3.2,
+        "Gemini": 4.0,
+        "Grok": 3.75
+    },
+    "Sex_Female_ZeroShot": {
+        "DeepSeek": 3.95,
+        "ChatGPT": 3.05,
+        "Gemini": 3.85,
+        "Grok": 4.0
+    },
+    "Migration_Context_ZeroShot": {
+        "DeepSeek": 4.0,
+        "ChatGPT": 3.0,
+        "Gemini": 4.0
+    },
+    "NoContext_ZeroShot_NoErrors": {
+        "DeepSeek": 3.95,
+        "ChatGPT": 3.0,
+        "Gemini": 3.7
+    }
+}
