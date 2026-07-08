@@ -1,21 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>Bildungskongress Datensatz</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .graph-container { margin: 20px 0; border: 1px solid #ddd; padding: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bildungskongress Datensatz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+      color: #222;
+    }
+
+    .page {
+      padding: 16px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+
+    .card-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+
+    .subject-card {
+      flex: 1 1 220px;
+      max-width: 280px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 14px;
+      padding: 20px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
+      text-align: center;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    }
+
+    .subject-card.active {
+      border-color: #2d6cdf;
+      box-shadow: 0 0 0 3px rgba(45,108,223,0.15);
+    }
+
+    .subject-card.inactive {
+      opacity: 0.45;
+      transform: scale(0.96);
+    }
+
+    .subject-graphs {
+      display: none;
+      width: 100%;
+    }
+
+    .subject-graphs.active {
+      display: block;
+    }
+
+    .graphs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      width: 100%;
+    }
+
+    .graph-container {
+      border: 1px solid #ddd;
+      padding: 8px;
+      background: white;
+      border-radius: 10px;
+      min-width: 0;
+    }
+
+    .graph-container h3 {
+      font-size: 13px;
+      margin: 0 0 8px;
+    }
+
+    .graph-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #2d6cdf;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .graphs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .graphs-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
+  <div class="page">
     <h1>Bildungskongress Datensatz</h1>
-    <div class="graph-container">
-        <h2>Graph 1</h2>
-        <img src="CachedData_German/llm_comparison_sex.png" alt="Graph 1" style="max-width: 100%;">
+
+    <div class="card-row" id="subjectCards">
+      <div class="subject-card" data-subject="deutsch">
+        <h2>Deutsch</h2>
+        <p>Texte, Sprache und Analyse</p>
+      </div>
+
+      <div class="subject-card" data-subject="informatik">
+        <h2>Informatik</h2>
+        <p>Technik, Daten und Systeme</p>
+      </div>
+
+      <div class="subject-card" data-subject="politik">
+        <h2>Politik</h2>
+        <p>Gesellschaft, Staat und Debatten</p>
+      </div>
     </div>
-    <div class="graph-container">
-        <h2>Graph 2</h2>
-        <img src="CachedData_German/llm_comparison.png" alt="Graph 2" style="max-width: 100%;">
+
+    <div id="graphs-deutsch" class="subject-graphs">
+      <span class="back-link" onclick="showLanding()">← Zurück</span>
+      <h2>Deutsch</h2>
+
+      <div class="graphs-grid">
+        <div class="graph-container"><h3>Migration_Context_ZeroShot</h3><img src="graphs/German/Migration_Context_ZeroShot_average_grade.png" alt="Migration_Context_ZeroShot average grade"></div>
+        <div class="graph-container"><h3>Migration_Context_ZeroShot Heatmap</h3><img src="graphs/German/heatmaps/Migration_Context_ZeroShot_heatmap.png" alt="Migration_Context_ZeroShot heatmap"></div>
+        <div class="graph-container"><h3>NoContext_OneShot_Bad</h3><img src="graphs/German/NoContext_OneShot_Bad_average_grade.png" alt="NoContext_OneShot_Bad average grade"></div>
+
+        <div class="graph-container"><h3>NoContext_OneShot_Bad Heatmap</h3><img src="graphs/German/heatmaps/NoContext_OneShot_Bad_heatmap.png" alt="NoContext_OneShot_Bad heatmap"></div>
+        <div class="graph-container"><h3>NoContext_OneShot_Good</h3><img src="graphs/German/NoContext_OneShot_Good_average_grade.png" alt="NoContext_OneShot_Good average grade"></div>
+        <div class="graph-container"><h3>NoContext_OneShot_Good Heatmap</h3><img src="graphs/German/heatmaps/NoContext_OneShot_Good_heatmap.png" alt="NoContext_OneShot_Good heatmap"></div>
+
+        <div class="graph-container"><h3>NoContext_ZeroShot</h3><img src="graphs/German/NoContext_ZeroShot_average_grade.png" alt="NoContext_ZeroShot average grade"></div>
+        <div class="graph-container"><h3>NoContext_ZeroShot Heatmap</h3><img src="graphs/German/heatmaps/NoContext_ZeroShot_heatmap.png" alt="NoContext_ZeroShot heatmap"></div>
+        <div class="graph-container"><h3>NoContext_ZeroShot_NoErrors</h3><img src="graphs/German/NoContext_ZeroShot_NoErrors_average_grade.png" alt="NoContext_ZeroShot_NoErrors average grade"></div>
+
+        <div class="graph-container"><h3>NoContext_ZeroShot_NoErrors Heatmap</h3><img src="graphs/German/heatmaps/NoContext_ZeroShot_NoErrors_heatmap.png" alt="NoContext_ZeroShot_NoErrors heatmap"></div>
+        <div class="graph-container"><h3>Sex_Female_ZeroShot</h3><img src="graphs/German/Sex_Female_ZeroShot_average_grade.png" alt="Sex_Female_ZeroShot average grade"></div>
+        <div class="graph-container"><h3>Sex_Female_ZeroShot Heatmap</h3><img src="graphs/German/heatmaps/Sex_Female_ZeroShot_heatmap.png" alt="Sex_Female_ZeroShot heatmap"></div>
+
+        <div class="graph-container"><h3>Sex_Male_ZeroShot</h3><img src="graphs/German/Sex_Male_ZeroShot_average_grade.png" alt="Sex_Male_ZeroShot average grade"></div>
+        <div class="graph-container"><h3>Sex_Male_ZeroShot Heatmap</h3><img src="graphs/German/heatmaps/Sex_Male_ZeroShot_heatmap.png" alt="Sex_Male_ZeroShot heatmap"></div>
+      </div>
     </div>
+
+    <div id="graphs-informatik" class="subject-graphs">
+      <span class="back-link" onclick="showLanding()">← Zurück</span>
+      <h2>Informatik</h2>
+      <div class="graphs-grid">
+        <div class="graph-container"><h3>Graph 1</h3><img src="CachedData_German/informatik_graph1.png" alt="Informatik Graph 1"></div>
+        <div class="graph-container"><h3>Graph 2</h3><img src="CachedData_German/informatik_graph2.png" alt="Informatik Graph 2"></div>
+      </div>
+    </div>
+
+    <div id="graphs-politik" class="subject-graphs">
+      <span class="back-link" onclick="showLanding()">← Zurück</span>
+      <h2>Politik</h2>
+      <div class="graphs-grid">
+        <div class="graph-container"><h3>Graph 1</h3><img src="CachedData_German/politik_graph1.png" alt="Politik Graph 1"></div>
+        <div class="graph-container"><h3>Graph 2</h3><img src="CachedData_German/politik_graph2.png" alt="Politik Graph 2"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.subject-card');
+    const graphSections = document.querySelectorAll('.subject-graphs');
+    const landingCards = document.getElementById('subjectCards');
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        const subject = card.dataset.subject;
+
+        cards.forEach(c => {
+          c.classList.remove('active');
+          c.classList.add('inactive');
+        });
+        card.classList.add('active');
+        card.classList.remove('inactive');
+
+        graphSections.forEach(section => section.classList.remove('active'));
+        document.getElementById(`graphs-${subject}`).classList.add('active');
+
+        landingCards.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    function showLanding() {
+      graphSections.forEach(section => section.classList.remove('active'));
+      cards.forEach(c => c.classList.remove('inactive', 'active'));
+      landingCards.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
