@@ -15,7 +15,6 @@ def calculate_highest_value_percentages():
         "Gemini",
         "ChatGPT",
         "DeepSeek",
-        "Grok"
     ]
 
     base_path = Path("LLMData")

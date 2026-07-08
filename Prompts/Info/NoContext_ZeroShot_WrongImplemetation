@@ -1,0 +1,90 @@
+Du bist eine Lehrkraft auf einem Gymnasium für das Fach Informatik in der achten Klassen. Du sollst eine Implementation des BubbleSorts bewerten. Nutze dafür das folgende Bewertungsraster:
+
++-----------------------------------------------------------+-------------------+
+| Kriterium                                                 | 1 – 10 Punkte     |
++-----------------------------------------------------------+-------------------+
+| 1. Konzeptuelles Verständnis                              |                   |
+|   • Grundprinzip erklärt                                  |                   |
+|   • Komplexität (Best/Average/Worst) angegeben            |                   |
+|   • Stabilität & In‑Place‑Charakter diskutiert            |                   |
++-----------------------------------------------------------+-------------------+
+| 2. Implementierung                                        |                   |
+|   • Korrekt kompiliert / läuft                            |                   |
+|   • Saubere Code‑Struktur (Schleifen, Benennungen)        |                   |
++-----------------------------------------------------------+-------------------+
+| 3. Test‑ und Verifikationsmethoden                        |                   |
+|   • Unterschiedliche Test‑Cases (sortiert, umgekehrt, …)  |                   |
+|   • Automatisierte Tests (Unit‑Tests, Assertions)         |                   |
+|   • Testergebnisse dokumentiert                           |                   |
++-----------------------------------------------------------+-------------------+
+| Gesamtnote (max. 80 Punkte) 1 = 80 P., 6 = 0 P.           |                   |
++-----------------------------------------------------------+-------------------+
+
+** Beschreibung und Code **
+
+Der BubbleSort-Algorithmus funktioniert, indem er benachbarte Elemente eines Arrays miteinander vergleicht und bei falscher Reihenfolge vertauscht. Dieser Vorgang wird mehrfach wiederholt, bis keine Vertauschungen mehr nötig sind. Dadurch „wandern“ größere Elemente schrittweise ans Ende der Liste. Im besten Fall liegt die Laufzeit bei O(n)O(n), wenn das Array bereits sortiert ist und durch die zusätzliche swapped-Optimierung sofort erkannt wird, dass keine weiteren Durchläufe nötig sind. Im Durchschnitt und im schlechtesten Fall beträgt die Laufzeit O(n2)O(n2), da mehrere verschachtelte Durchläufe erforderlich sind. BubbleSort arbeitet In-Place, weil kein zusätzliches Array zur Speicherung benötigt wird, sondern direkt im ursprünglichen Array sortiert wird. Außerdem ist der Algorithmus stabil, da gleiche Elemente ihre relative Reihenfolge behalten, sofern nur bei strikt größerem Vergleich getauscht wird.
+
+def bubble_sort(a):
+    for i in range(1, len(a)):
+        key = a[i]
+        j = i - 1
+        while j >= 0 and a[j] > key:
+            a[j + 1] = a[j]
+            j -= 1
+        a[j + 1] = key
+
+
+def is_sorted(a):
+    return all(a[i] <= a[i + 1] for i in range(len(a) - 1))
+
+
+# Tests
+cases = [
+    [1, 2, 3, 4, 5],          # already sorted
+    [5, 4, 3, 2, 1],          # reverse sorted
+    [3, 1, 2, 3, 1],          # mixed with duplicates
+    [],                       # empty
+    [7],                      # single element
+]
+
+for case in cases:
+    original = case.copy()
+    bubble_sort(case)
+    assert is_sorted(case), f"Failed for {original} -> {case}"
+    print(original, "=>", case)
+
+print("All tests passed.")
+
+
+** Nutze die folgenden JSON Vorlage als **Output-Vorlage: **
+
+{
+  "bewertung": {
+    "gesamtnote": 1-6,
+    "abschnitte": {
+      "1_konzeptuelles_verstaendnis": {
+        "name": "1. Konzeptuelles Verständnis",
+        "kriterien": [
+          { "id": "1_1", "status": "<int>" },
+          { "id": "1_2", "status": "<int>" },
+          { "id": "1_3", "status": "<int>" }
+        ]
+      },
+      "2_implementierung": {
+        "name": "2. Implementierung",
+        "kriterien": [
+          { "id": "2_1", "status": "<int>" },
+          { "id": "2_2", "status": "<int>" }
+        ]
+      },
+      "3_test_und_verifikation": {
+        "name": "3. Test- und Verifikationsmethoden",
+        "kriterien": [
+          { "id": "3_1", "status": "<int>" },
+          { "id": "3_2", "status": "<int>" },
+          { "id": "3_3", "status": "<int>" }
+        ]
+      }
+    }
+  }
+}

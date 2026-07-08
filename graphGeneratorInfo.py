@@ -64,8 +64,8 @@ def save_summary(criteria_stats, gesamtnote_stats, output_file):
         json.dump(result, f, indent=4, ensure_ascii=False)
 
 if __name__ == "__main__":
-    GENERAL_FOLDER = "CachedData_Info/NoContext_ZeroShot_BubbleSort_NotWorking"
-    LLM = "ChatGPT"
+    GENERAL_FOLDER = "CachedData_Info/NoContext_ZeroShot_WrongImplementation"
+    LLM = "Gemini"
     JSON_FOLDER = f"{GENERAL_FOLDER}/{LLM}"
 
     OUTPUT_SUMMARY = f"{JSON_FOLDER}/bewertung_summary.json"

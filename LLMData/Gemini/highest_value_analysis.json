@@ -1,66 +1,38 @@
 {
   "1_1": {
-    "avg_percentage": 94.17,
-    "count": 6
+    "avg_percentage": 100.0,
+    "count": 2
+  },
+  "1_2": {
+    "avg_percentage": 100.0,
+    "count": 2
+  },
+  "1_3": {
+    "avg_percentage": 100.0,
+    "count": 2
   },
   "2_1": {
-    "avg_percentage": 99.17,
-    "count": 6
+    "avg_percentage": 37.5,
+    "count": 2
   },
   "2_2": {
-    "avg_percentage": 71.67,
-    "count": 6
-  },
-  "2_3": {
-    "avg_percentage": 67.5,
-    "count": 6
-  },
-  "2_4": {
-    "avg_percentage": 85.0,
-    "count": 6
+    "avg_percentage": 37.5,
+    "count": 2
   },
   "3_1": {
-    "avg_percentage": 95.0,
-    "count": 6
+    "avg_percentage": 79.17,
+    "count": 2
   },
   "3_2": {
-    "avg_percentage": 78.33,
-    "count": 6
+    "avg_percentage": 83.89,
+    "count": 2
   },
   "3_3": {
-    "avg_percentage": 80.0,
-    "count": 6
+    "avg_percentage": 75.0,
+    "count": 2
   },
-  "3_4": {
-    "avg_percentage": 75.83,
-    "count": 6
-  },
-  "3_5": {
-    "avg_percentage": 80.83,
-    "count": 6
-  },
-  "3_6": {
-    "avg_percentage": 78.33,
-    "count": 6
-  },
-  "4_1": {
-    "avg_percentage": 62.5,
-    "count": 6
-  },
-  "4_2": {
-    "avg_percentage": 55.83,
-    "count": 6
-  },
-  "5_1": {
-    "avg_percentage": 92.5,
-    "count": 6
-  },
-  "5_2": {
-    "avg_percentage": 94.17,
-    "count": 6
-  },
-  "5_3": {
-    "avg_percentage": 80.83,
-    "count": 6
+  "gesamtnote": {
+    "avg_percentage": 67.5,
+    "count": 2
   }
 }

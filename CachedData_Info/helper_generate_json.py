@@ -1,6 +1,6 @@
 import os
 
-FOLDER_NAME = "NoContext_ZeroShot_BubbleSort"
+FOLDER_NAME = "NoContext_ZeroShot_WrongImplementation"
 
 os.mkdir(f"{FOLDER_NAME}")
 

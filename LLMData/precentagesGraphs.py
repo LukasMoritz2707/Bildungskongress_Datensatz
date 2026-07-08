@@ -13,7 +13,6 @@ def grouped_bars(df):
     bars1 = ax.bar(x - width, df['Gemini'], width, label='Gemini', alpha=0.8)
     bars2 = ax.bar(x, df['ChatGPT'], width, label='ChatGPT', alpha=0.8)
     bars3 = ax.bar(x + width, df['DeepSeek'], width, label='DeepSeek', alpha=0.8)
-    bars4 = ax.bar(x + width + width, df['Grok'], width, label='Grok', alpha=0.8)
 
     ax.set_xlabel('Category', fontsize=12, fontweight='bold')
     ax.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
@@ -50,14 +49,13 @@ def line_Chart(df):
     ax.plot(df['Category'], df['Gemini'], marker='o', linewidth=2, label='Gemini', markersize=8)
     ax.plot(df['Category'], df['ChatGPT'], marker='s', linewidth=2, label='ChatGPT', markersize=8)
     ax.plot(df['Category'], df['DeepSeek'], marker='^', linewidth=2, label='DeepSeek', markersize=8)
-    ax.plot(df['Category'], df['Grok'], marker='^', linewidth=2, label='Grok', markersize=8)
 
     ax.set_xlabel('Category', fontsize=12, fontweight='bold')
     ax.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
     ax.set_title('LLM Performance Trends Across Categories', fontsize=14, fontweight='bold')
     ax.legend(fontsize=11)
     ax.grid(True, alpha=0.3)
-    ax.set_ylim(50, 105)
+    ax.set_ylim(0, 105)
 
     plt.xticks(rotation=45)
     plt.tight_layout()
@@ -68,11 +66,11 @@ def boxplot(df):
 
     fig, ax = plt.subplots(figsize=(10, 7))
 
-    data_to_plot = [df['Gemini'], df['ChatGPT'], df['Grok'],df['DeepSeek']]
-    bp = ax.boxplot(data_to_plot, label=['Gemini', 'ChatGPT', 'DeepSeek', 'Grok'], patch_artist=True)
+    data_to_plot = [df['Gemini'], df['ChatGPT'],df['DeepSeek']]
+    bp = ax.boxplot(data_to_plot, label=['Gemini', 'ChatGPT', 'DeepSeek'], patch_artist=True)
 
     # Color the boxes
-    colors = ['#FF9999', '#66B2FF', '#99FF99', '#77FF77']
+    colors = ['#FF9999', '#66B2FF', '#99FF99']
     for patch, color in zip(bp['boxes'], colors):
         patch.set_facecolor(color)
         patch.set_alpha(0.7)
@@ -80,7 +78,7 @@ def boxplot(df):
     ax.set_ylabel('Percentage (%)', fontsize=12, fontweight='bold')
     ax.set_title('LLM Performance Distribution', fontsize=14, fontweight='bold')
     ax.grid(axis='y', alpha=0.3)
-    ax.set_ylim(50, 105)
+    ax.set_ylim(0, 105)
 
     plt.tight_layout()
     plt.savefig('llm_comparison_boxplot.png', dpi=300)
@@ -89,7 +87,7 @@ def boxplot(df):
 if __name__ == '__main__':
     df = pd.read_csv("summary_percentages.csv")
 
-    #grouped_bars(df)
+    grouped_bars(df)
     heat_map(df)
-    #line_Chart(df)
-    #boxplot(df)
+    line_Chart(df)
+    boxplot(df)

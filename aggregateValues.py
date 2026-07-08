@@ -12,6 +12,7 @@ def collect_and_aggregate_by_llm():
     """
 
     # Define the context and LLM names
+    """
     context_names = [
         "NoContext_ZeroShot",
         "NoContext_OneShot_Bad",
@@ -19,17 +20,21 @@ def collect_and_aggregate_by_llm():
         "Sex_Male_ZeroShot",
         "Sex_Female_ZeroShot",
         "NoContext_ZeroShot_NoErrors"
+    ]"""
+
+    context_names = [
+        "NoContext_ZeroShot_BubbleSort_NotWorking",
+        "NoContext_ZeroShot_WrongImplementation",
     ]
 
     llm_names = [
         "Gemini",
         "ChatGPT",
-        "Grok",
         "DeepSeek"
     ]
 
     # Base path
-    base_path = Path("CachedData_German")
+    base_path = Path("CachedData_Info")
     output_base_path = Path("LLMData")
 
     # Create output directory if it doesn't exist
