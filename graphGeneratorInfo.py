@@ -65,7 +65,7 @@ def save_summary(criteria_stats, gesamtnote_stats, output_file):
 
 if __name__ == "__main__":
     GENERAL_FOLDER = "CachedData_Info/NoContext_ZeroShot_WrongImplementation"
-    LLM = "Gemini"
+    LLM = "ChatGPT"
     JSON_FOLDER = f"{GENERAL_FOLDER}/{LLM}"
 
     OUTPUT_SUMMARY = f"{JSON_FOLDER}/bewertung_summary.json"

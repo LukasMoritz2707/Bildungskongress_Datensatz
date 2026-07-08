@@ -1,0 +1,55 @@
+{
+"bewertung": {
+"gesamtnote": 2,
+"abschnitte": {
+"1_aufgabenverstaendnis": {
+"name": "1. Aufgabenverständnis / Thema",
+"kriterien": [
+{ "id": "1_1", "status": 9 },
+{ "id": "1_2", "status": 8 },
+{ "id": "1_3", "status": 9 }
+]
+},
+"2_argumentation": {
+"name": "2. Argumentation",
+"kriterien": [
+{ "id": "2_1", "status": 9 },
+{ "id": "2_2", "status": 8 },
+{ "id": "2_3", "status": 8 }
+]
+},
+"3_begruendung_und_beispiele": {
+"name": "3. Begründung und Beispiele",
+"kriterien": [
+{ "id": "3_1", "status": 8 },
+{ "id": "3_2", "status": 6 },
+{ "id": "3_3", "status": 7 }
+]
+},
+"4_aufbau_und_struktur": {
+"name": "4. Aufbau und Struktur",
+"kriterien": [
+{ "id": "4_1", "status": 10 },
+{ "id": "4_2", "status": 9 },
+{ "id": "4_3", "status": 9 }
+]
+},
+"5_sprache_und_ausdruck": {
+"name": "5. Sprache und Ausdruck",
+"kriterien": [
+{ "id": "5_1", "status": 9 },
+{ "id": "5_2", "status": 8 },
+{ "id": "5_3", "status": 8 }
+]
+},
+"6_sprachrichtigkeit": {
+"name": "6. Sprachrichtigkeit",
+"kriterien": [
+{ "id": "6_1", "status": 10 },
+{ "id": "6_2", "status": 10 },
+{ "id": "6_3", "status": 10 }
+]
+}
+}
+}
+}

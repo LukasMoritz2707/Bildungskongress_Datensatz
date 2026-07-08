@@ -20,11 +20,16 @@ def collect_and_aggregate_by_llm():
         "Sex_Male_ZeroShot",
         "Sex_Female_ZeroShot",
         "NoContext_ZeroShot_NoErrors"
-    ]"""
+    ]
 
     context_names = [
         "NoContext_ZeroShot_BubbleSort_NotWorking",
         "NoContext_ZeroShot_WrongImplementation",
+    ]"""
+
+    context_names = [
+        "China",
+        "Google"
     ]
 
     llm_names = [
@@ -34,7 +39,7 @@ def collect_and_aggregate_by_llm():
     ]
 
     # Base path
-    base_path = Path("CachedData_Info")
+    base_path = Path("CachedData_PoWi")
     output_base_path = Path("LLMData")
 
     # Create output directory if it doesn't exist

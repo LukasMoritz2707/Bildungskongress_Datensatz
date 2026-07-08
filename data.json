@@ -129,16 +129,16 @@
     "description": "Technik, Daten und Systeme",
     "topics": [
       {
-        "key": "informatik_graph1",
-        "title": "Graph 1",
+        "key": "NoContext_ZeroShot_WrongImplementation",
+        "title": "NoContext_ZeroShot_WrongImplementation",
         "graphs": [
           {
             "title": "Graph",
-            "src": "CachedData_German/informatik_graph1.png",
+            "src": "CachedData_Info/llm_comparison.png",
             "alt": "Informatik Graph 1"
           }
         ],
-        "prompt": "Prompts/Info/example_BubbleSort_NonWorking.py"
+        "prompt": "Prompts/Info/NoContext_ZeroShot_WrongImplemetation.txt"
       }
     ]
   },
@@ -152,11 +152,11 @@
         "graphs": [
           {
             "title": "Graph",
-            "src": "CachedData_German/politik_graph1.png",
+            "src": "CachedData_PoWi/China/ChatGPT/gesamtnoten_verteilung.png",
             "alt": "Politik Graph 1"
           }
         ],
-        "prompt": "Prompts/Info/example_InsertionSort_Working.py"
+        "prompt": "Prompts/PoWi/NoContext_ZeroShot_China"
       }
     ]
   }

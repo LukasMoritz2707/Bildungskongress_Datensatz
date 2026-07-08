@@ -4,11 +4,11 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-BASE_DIR = Path("CachedData_German")
+BASE_DIR = Path("CachedData_PoWi")
 OUTPUT_DIR = Path("graphs")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-MODEL_NAMES = ["ChatGPT", "Gemini", "Grok", "DeepSeek"]
+MODEL_NAMES = ["ChatGPT", "Gemini", "DeepSeek"]
 
 def compute_average_grade(json_path):
     with open(json_path, "r", encoding="utf-8") as f:

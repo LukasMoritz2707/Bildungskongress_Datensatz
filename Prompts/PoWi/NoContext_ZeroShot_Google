@@ -1,0 +1,111 @@
+Du bist eine Lehrkraft auf einem Gymnasium für das Fach Gemeinschaftskunde in der zwölften Klassen. Du sollst eine Erörterung bewerten. Nutze dafür das folgende Bewertungsraster:
+
++-----------------------------------------------------------+-------------------+
+| Kriterium                                                 | 1 – 10 Punkte     |
++-----------------------------------------------------------+-------------------+
+| 1. Aufgabenverständnis / Thema                            |                   |
+|   • Fragestellung richtig erfasst                         |                   |
+|   • Thema vollständig bearbeitet                          |                   |
+|   • Roter Faden erkennbar                                 |                   |
++-----------------------------------------------------------+-------------------+
+| 2. Argumentation                                          |                   |
+|   • Thesen klar formuliert                                |                   |
+|   • Argumente schlüssig und nachvollziehbar               |                   |
+|   • Pro- und Contra-Aspekte ausgewogen / passend behandelt|                   |
++-----------------------------------------------------------+-------------------+
+| 3. Begründung und Beispiele                               |                   |
+|   • Argumente sinnvoll begründet                          |                   |
+|   • Passende Beispiele / Belege verwendet                 |                   |
+|   • Differenzierung und Tiefe erkennbar                   |                   |
++-----------------------------------------------------------+-------------------+
+| 4. Aufbau und Struktur                                    |                   |
+|   • Einleitung, Hauptteil, Schluss klar erkennbar         |                   |
+|   • Logische Reihenfolge der Argumente                    |                   |
+|   • Schluss mit eigenem Fazit / Stellungnahme             |                   |
++-----------------------------------------------------------+-------------------+
+| 5. Sprache und Ausdruck                                   |                   |
+|   • Verständlich und präzise formuliert                   |                   |
+|   • Fachsprachliche Begriffe passend eingesetzt           |                   |
+|   • Stil angemessen und abwechslungsreich                 |                   |
++-----------------------------------------------------------+-------------------+
+| 6. Sprachrichtigkeit                                      |                   |
+|   • Rechtschreibung und Grammatik korrekt                 |                   |
+|   • Zeichensetzung sicher                                 |                   |
+|   • Satzbau klar und fehlerarm                            |                   |
++-----------------------------------------------------------+-------------------+
+| Gesamtnote (max. 60 Punkte) 1 = 60 P., 6 = 0 P.           |                   |
++-----------------------------------------------------------+-------------------+
+
+** Nutze die folgenden JSON Vorlage als **Output-Vorlage: **
+
+{
+  "bewertung": {
+    "gesamtnote": 1-6 <int>,
+    "abschnitte": {
+      "1_aufgabenverstaendnis": {
+        "name": "1. Aufgabenverständnis / Thema",
+        "kriterien": [
+          { "id": "1_1", "status": "<int>" },
+          { "id": "1_2", "status": "<int>" },
+          { "id": "1_3", "status": "<int>" }
+        ]
+      },
+      "2_argumentation": {
+        "name": "2. Argumentation",
+        "kriterien": [
+          { "id": "2_1", "status": "<int>" },
+          { "id": "2_2", "status": "<int>" },
+          { "id": "2_3", "status": "<int>" }
+        ]
+      },
+      "3_begruendung_und_beispiele": {
+        "name": "3. Begründung und Beispiele",
+        "kriterien": [
+          { "id": "3_1", "status": "<int>" },
+          { "id": "3_2", "status": "<int>" },
+          { "id": "3_3", "status": "<int>" }
+        ]
+      },
+      "4_aufbau_und_struktur": {
+        "name": "4. Aufbau und Struktur",
+        "kriterien": [
+          { "id": "4_1", "status": "<int>" },
+          { "id": "4_2", "status": "<int>" },
+          { "id": "4_3", "status": "<int>" }
+        ]
+      },
+      "5_sprache_und_ausdruck": {
+        "name": "5. Sprache und Ausdruck",
+        "kriterien": [
+          { "id": "5_1", "status": "<int>" },
+          { "id": "5_2", "status": "<int>" },
+          { "id": "5_3", "status": "<int>" }
+        ]
+      },
+      "6_sprachrichtigkeit": {
+        "name": "6. Sprachrichtigkeit",
+        "kriterien": [
+          { "id": "6_1", "status": "<int>" },
+          { "id": "6_2", "status": "<int>" },
+          { "id": "6_3", "status": "<int>" }
+        ]
+      }
+    }
+  }
+}
+
+** Erörterung zum Thema: Gefährdet Googles Macht über Informationen die Demokratie? **
+
+In der heutigen digitalen Gesellschaft ist der Zugang zu Informationen wichtiger denn je. Suchmaschinen wie Google spielen dabei eine zentrale Rolle, da sie für viele Menschen die erste Anlaufstelle sind, wenn sie nach Wissen, Nachrichten oder politischen Informationen suchen. Durch seine enorme Reichweite besitzt Google eine große Macht darüber, welche Informationen sichtbar werden und welche weniger Beachtung finden. Daraus ergibt sich die Frage, ob diese Macht eine Gefahr für die Demokratie darstellt.
+
+Einerseits kann Googles Einfluss auf Informationen eine Bedrohung für demokratische Prozesse sein. Ein wichtiger Bestandteil einer funktionierenden Demokratie ist eine gut informierte Bevölkerung, die sich eine eigene Meinung bilden kann. Wenn Suchalgorithmen entscheiden, welche Inhalte besonders weit oben erscheinen, beeinflusst dies möglicherweise die Wahrnehmung der Nutzer. Informationen, die nicht auf den ersten Seiten der Suchergebnisse erscheinen, werden häufig weniger beachtet. Dadurch könnte Google indirekt bestimmen, welche Themen gesellschaftlich relevant wirken. Außerdem besteht die Gefahr, dass bestimmte politische Ansichten durch algorithmische Entscheidungen bevorzugt oder benachteiligt werden. Da viele Menschen ihre Informationen hauptsächlich über das Internet beziehen, kann dies Auswirkungen auf politische Diskussionen und Wahlen haben.
+
+Ein weiteres Problem besteht darin, dass Google als privates Unternehmen nicht demokratisch kontrolliert wird. Während staatliche Institutionen bestimmten Regeln und Kontrollen unterliegen, entscheidet ein Konzern wie Google selbst über die Funktionsweise seiner Algorithmen. Kritiker befürchten deshalb, dass wirtschaftliche Interessen wichtiger sein könnten als eine möglichst vielfältige Informationsvermittlung. Zudem sammelt Google große Mengen an Nutzerdaten, wodurch das Unternehmen sehr genaue Einblicke in das Verhalten und die Interessen von Menschen erhält. Diese Datenmacht kann die Gefahr einer gezielten Beeinflussung erhöhen.
+
+Andererseits darf nicht außer Acht gelassen werden, dass Google auch einen wichtigen Beitrag zur Demokratie leisten kann. Durch die schnelle und einfache Verfügbarkeit von Informationen ermöglicht die Suchmaschine vielen Menschen den Zugang zu Wissen, politischen Inhalten und unterschiedlichen Meinungen. Ohne digitale Plattformen wäre es deutlich schwieriger, sich über aktuelle Ereignisse zu informieren oder politische Entscheidungen kritisch zu hinterfragen. Außerdem ist Google nicht die einzige Informationsquelle. Nutzer können verschiedene Medien vergleichen und sich dadurch eine eigene Meinung bilden.
+
+Darüber hinaus arbeitet Google daran, die Qualität von Suchergebnissen zu verbessern und gegen Falschinformationen vorzugehen. Eine vollständige Neutralität eines Algorithmus ist zwar kaum möglich, dennoch können technische Lösungen dazu beitragen, vertrauenswürdige Quellen sichtbarer zu machen. Die Verantwortung liegt jedoch nicht nur bei Unternehmen, sondern auch bei den Nutzern selbst. Medienkompetenz ist entscheidend, damit Menschen Informationen kritisch bewerten können.
+
+Zusammenfassend lässt sich sagen, dass Googles Macht über Informationen durchaus Risiken für die Demokratie mit sich bringt. Besonders die Kontrolle darüber, welche Inhalte sichtbar werden, kann die öffentliche Meinungsbildung beeinflussen. Dennoch bedeutet die Existenz einer mächtigen Suchmaschine nicht automatisch eine Gefahr für die Demokratie, da sie gleichzeitig den Zugang zu Wissen erleichtert. Entscheidend ist daher, dass Unternehmen transparent handeln, demokratisch kontrolliert werden und Bürger lernen, Informationen kritisch zu hinterfragen. Nur so kann verhindert werden, dass die Macht über Informationen zu einer Macht über die Gesellschaft wird.
+
+** Gebe nur das JSON aus **

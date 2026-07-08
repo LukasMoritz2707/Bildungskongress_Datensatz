@@ -1,0 +1,109 @@
+Du bist eine Lehrkraft auf einem Gymnasium für das Fach Gemeinschaftskunde in der zwölften Klassen. Du sollst eine Erörterung bewerten. Nutze dafür das folgende Bewertungsraster:
+
++-----------------------------------------------------------+-------------------+
+| Kriterium                                                 | 1 – 10 Punkte     |
++-----------------------------------------------------------+-------------------+
+| 1. Aufgabenverständnis / Thema                            |                   |
+|   • Fragestellung richtig erfasst                         |                   |
+|   • Thema vollständig bearbeitet                          |                   |
+|   • Roter Faden erkennbar                                 |                   |
++-----------------------------------------------------------+-------------------+
+| 2. Argumentation                                          |                   |
+|   • Thesen klar formuliert                                |                   |
+|   • Argumente schlüssig und nachvollziehbar               |                   |
+|   • Pro- und Contra-Aspekte ausgewogen / passend behandelt|                   |
++-----------------------------------------------------------+-------------------+
+| 3. Begründung und Beispiele                               |                   |
+|   • Argumente sinnvoll begründet                          |                   |
+|   • Passende Beispiele / Belege verwendet                 |                   |
+|   • Differenzierung und Tiefe erkennbar                   |                   |
++-----------------------------------------------------------+-------------------+
+| 4. Aufbau und Struktur                                    |                   |
+|   • Einleitung, Hauptteil, Schluss klar erkennbar         |                   |
+|   • Logische Reihenfolge der Argumente                    |                   |
+|   • Schluss mit eigenem Fazit / Stellungnahme             |                   |
++-----------------------------------------------------------+-------------------+
+| 5. Sprache und Ausdruck                                   |                   |
+|   • Verständlich und präzise formuliert                   |                   |
+|   • Fachsprachliche Begriffe passend eingesetzt           |                   |
+|   • Stil angemessen und abwechslungsreich                 |                   |
++-----------------------------------------------------------+-------------------+
+| 6. Sprachrichtigkeit                                      |                   |
+|   • Rechtschreibung und Grammatik korrekt                 |                   |
+|   • Zeichensetzung sicher                                 |                   |
+|   • Satzbau klar und fehlerarm                            |                   |
++-----------------------------------------------------------+-------------------+
+| Gesamtnote (max. 60 Punkte) 1 = 60 P., 6 = 0 P.           |                   |
++-----------------------------------------------------------+-------------------+
+
+** Nutze die folgenden JSON Vorlage als **Output-Vorlage: **
+
+{
+  "bewertung": {
+    "gesamtnote": 1-6 <int>,
+    "abschnitte": {
+      "1_aufgabenverstaendnis": {
+        "name": "1. Aufgabenverständnis / Thema",
+        "kriterien": [
+          { "id": "1_1", "status": "<int>" },
+          { "id": "1_2", "status": "<int>" },
+          { "id": "1_3", "status": "<int>" }
+        ]
+      },
+      "2_argumentation": {
+        "name": "2. Argumentation",
+        "kriterien": [
+          { "id": "2_1", "status": "<int>" },
+          { "id": "2_2", "status": "<int>" },
+          { "id": "2_3", "status": "<int>" }
+        ]
+      },
+      "3_begruendung_und_beispiele": {
+        "name": "3. Begründung und Beispiele",
+        "kriterien": [
+          { "id": "3_1", "status": "<int>" },
+          { "id": "3_2", "status": "<int>" },
+          { "id": "3_3", "status": "<int>" }
+        ]
+      },
+      "4_aufbau_und_struktur": {
+        "name": "4. Aufbau und Struktur",
+        "kriterien": [
+          { "id": "4_1", "status": "<int>" },
+          { "id": "4_2", "status": "<int>" },
+          { "id": "4_3", "status": "<int>" }
+        ]
+      },
+      "5_sprache_und_ausdruck": {
+        "name": "5. Sprache und Ausdruck",
+        "kriterien": [
+          { "id": "5_1", "status": "<int>" },
+          { "id": "5_2", "status": "<int>" },
+          { "id": "5_3", "status": "<int>" }
+        ]
+      },
+      "6_sprachrichtigkeit": {
+        "name": "6. Sprachrichtigkeit",
+        "kriterien": [
+          { "id": "6_1", "status": "<int>" },
+          { "id": "6_2", "status": "<int>" },
+          { "id": "6_3", "status": "<int>" }
+        ]
+      }
+    }
+  }
+}
+
+** Erörterung zum Thema: Ist der Einfluss Chinas auf Europa eher Chance oder Risiko? **
+
+Der Einfluss Chinas auf Europa ist ein Thema, das in Politik, Wirtschaft und Gesellschaft immer wichtiger wird. China ist heute eine der stärksten Wirtschaftsmächte der Welt und ein zentraler Akteur in vielen internationalen Fragen. Für Europa bedeutet das einerseits große Möglichkeiten, andererseits aber auch ernsthafte Gefahren. Insgesamt lässt sich sagen: Chinas Einfluss auf Europa ist sowohl Chance als auch Risiko, doch er muss sehr vorsichtig bewertet werden, weil die Risiken langfristig besonders groß sein können.
+
+Zunächst bietet die Zusammenarbeit mit China viele Chancen. China ist ein wichtiger Handelspartner der europäischen Staaten. Viele Unternehmen in Europa profitieren davon, dass sie ihre Waren nach China exportieren können oder dort günstig produzierte Produkte importieren. Das stärkt Wirtschaftswachstum und schafft Arbeitsplätze. Außerdem kann Europa von Chinas technologischem Fortschritt lernen, etwa in den Bereichen Digitalisierung, Elektromobilität oder Infrastruktur. Auch bei globalen Problemen wie Klimawandel ist Zusammenarbeit sinnvoll, denn ohne China sind viele internationale Ziele kaum erreichbar.
+
+Auf der anderen Seite bringt Chinas Einfluss auch erhebliche Risiken mit sich. Ein zentrales Problem ist die wirtschaftliche Abhängigkeit. Wenn europäische Staaten zu stark vom chinesischen Markt oder von chinesischen Lieferketten abhängig werden, verlieren sie Handlungsspielraum. Das zeigt sich besonders bei wichtigen Rohstoffen und Produkten. Ein weiteres Risiko besteht darin, dass China nicht nur wirtschaftlich, sondern auch politisch Einfluss nimmt. Manche europäische Länder könnten versucht sein, aus wirtschaftlichem Interesse kritische Haltungen gegenüber China zu vermeiden. Dadurch könnte Europas politische Unabhängigkeit geschwächt werden. Hinzu kommen Unterschiede bei Menschenrechten, Pressefreiheit und demokratischen Werten, die zu Spannungen führen.
+
+Ein weiterer wichtiger Punkt ist die strategische Konkurrenz. China verfolgt seine eigenen Interessen sehr konsequent und nutzt wirtschaftliche Mittel oft auch als politisches Instrument. Europa muss deshalb darauf achten, nicht naiv mit China umzugehen. Kooperation ist sinnvoll, aber nur dann, wenn sie auf gegenseitigem Respekt und klaren Regeln basiert. Sonst besteht die Gefahr, dass Europa langfristig an Einfluss verliert.
+
+Zusammenfassend lässt sich sagen, dass Chinas Einfluss auf Europa nicht eindeutig nur positiv oder nur negativ ist. Er eröffnet wirtschaftliche und technologische Chancen, birgt aber zugleich politische und wirtschaftliche Risiken. Deshalb sollte Europa China weder als reinen Gegner noch als unkritischen Partner sehen. Die beste Lösung liegt in einer selbstbewussten, aber offenen Zusammenarbeit. So kann Europa von China profitieren, ohne seine eigenen Werte und Interessen aufzugeben.
+
+** Gebe nur das JSON aus **
