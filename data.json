@@ -1,0 +1,163 @@
+{
+  "deutsch": {
+    "title": "Deutsch",
+    "description": "Texte, Sprache und Analyse",
+    "topics": [
+      {
+        "key": "Migration_Context_ZeroShot",
+        "title": "Migration_Context_ZeroShot",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/Migration_Context_ZeroShot_average_grade.png",
+            "alt": "Migration_Context_ZeroShot average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/Migration_Context_ZeroShot_heatmap.png",
+            "alt": "Migration_Context_ZeroShot heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_Context_Migration.txt"
+      },
+      {
+        "key": "NoContext_OneShot_Bad",
+        "title": "NoContext_OneShot_Bad",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/NoContext_OneShot_Bad_average_grade.png",
+            "alt": "NoContext_OneShot_Bad average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/NoContext_OneShot_Bad_heatmap.png",
+            "alt": "NoContext_OneShot_Bad heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_OneShot_Bad.txt"
+      },
+      {
+        "key": "NoContext_OneShot_Good",
+        "title": "NoContext_OneShot_Good",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/NoContext_OneShot_Good_average_grade.png",
+            "alt": "NoContext_OneShot_Good average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/NoContext_OneShot_Good_heatmap.png",
+            "alt": "NoContext_OneShot_Good heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_OneShot_Good.txt"
+      },
+      {
+        "key": "NoContext_ZeroShot",
+        "title": "NoContext_ZeroShot",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/NoContext_ZeroShot_average_grade.png",
+            "alt": "NoContext_ZeroShot average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/NoContext_ZeroShot_heatmap.png",
+            "alt": "NoContext_ZeroShot heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_NoContext.txt"
+      },
+      {
+        "key": "NoContext_ZeroShot_NoErrors",
+        "title": "NoContext_ZeroShot_NoErrors",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/NoContext_ZeroShot_NoErrors_average_grade.png",
+            "alt": "NoContext_ZeroShot_NoErrors average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/NoContext_ZeroShot_NoErrors_heatmap.png",
+            "alt": "NoContext_ZeroShot_NoErrors heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_NoContext_NoErrors.txt"
+      },
+      {
+        "key": "Sex_Female_ZeroShot",
+        "title": "Sex_Female_ZeroShot",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/Sex_Female_ZeroShot_average_grade.png",
+            "alt": "Sex_Female_ZeroShot average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/Sex_Female_ZeroShot_heatmap.png",
+            "alt": "Sex_Female_ZeroShot heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_Context_Sex_Female.txt"
+      },
+      {
+        "key": "Sex_Male_ZeroShot",
+        "title": "Sex_Male_ZeroShot",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/German/Sex_Male_ZeroShot_average_grade.png",
+            "alt": "Sex_Male_ZeroShot average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/German/heatmaps/Sex_Male_ZeroShot_heatmap.png",
+            "alt": "Sex_Male_ZeroShot heatmap"
+          }
+        ],
+        "prompt": "Prompts/German/Prompt_Context_Sex_Male.txt"
+      }
+    ]
+  },
+  "informatik": {
+    "title": "Informatik",
+    "description": "Technik, Daten und Systeme",
+    "topics": [
+      {
+        "key": "informatik_graph1",
+        "title": "Graph 1",
+        "graphs": [
+          {
+            "title": "Graph",
+            "src": "CachedData_German/informatik_graph1.png",
+            "alt": "Informatik Graph 1"
+          }
+        ],
+        "prompt": "Prompts/Info/example_BubbleSort_NonWorking.py"
+      }
+    ]
+  },
+  "politik": {
+    "title": "Politik",
+    "description": "Gesellschaft, Staat und Debatten",
+    "topics": [
+      {
+        "key": "politik_graph1",
+        "title": "Graph 1",
+        "graphs": [
+          {
+            "title": "Graph",
+            "src": "CachedData_German/politik_graph1.png",
+            "alt": "Politik Graph 1"
+          }
+        ],
+        "prompt": "Prompts/Info/example_InsertionSort_Working.py"
+      }
+    ]
+  }
+}
