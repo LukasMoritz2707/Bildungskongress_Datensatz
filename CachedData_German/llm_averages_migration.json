@@ -1,0 +1,12 @@
+{
+    "NoContext_ZeroShot": {
+        "DeepSeek": 3.85,
+        "ChatGPT": 2.68,
+        "Gemini": 3.8
+    },
+    "Migration_Context_ZeroShot": {
+        "DeepSeek": 4.0,
+        "ChatGPT": 3.0,
+        "Gemini": 4.0
+    }
+}
