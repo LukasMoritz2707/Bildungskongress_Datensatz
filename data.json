@@ -1,7 +1,7 @@
 {
   "deutsch": {
     "title": "Deutsch",
-    "description": "Texte, Sprache und Analyse",
+    "description": "Gedichtsanalyse",
     "topics": [
       {
         "key": "Migration_Context_ZeroShot",
@@ -126,37 +126,81 @@
   },
   "informatik": {
     "title": "Informatik",
-    "description": "Technik, Daten und Systeme",
+    "description": "Code Implementation",
     "topics": [
+      {
+        "key": "NoContext_ZeroShot_BubbleSort_NotWorking",
+        "title": "NoContext_ZeroShot_BubbleSort_NotWorking",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/Info/NoContext_ZeroShot_BubbleSort_NotWorking_average_grade.png",
+            "alt": "NoContext_ZeroShot_BubbleSort_NotWorking average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/Info/heatmaps/NoContext_ZeroShot_BubbleSort_NotWorking_heatmap.png",
+            "alt": "NoContext_ZeroShot_BubbleSort_NotWorking heatmap"
+          }
+        ],
+        "prompt": "Prompts/Info/NoContext_ZeroShot_BubbleSort_NotWorking.txt"
+      },
       {
         "key": "NoContext_ZeroShot_WrongImplementation",
         "title": "NoContext_ZeroShot_WrongImplementation",
         "graphs": [
           {
-            "title": "Graph",
-            "src": "CachedData_Info/llm_comparison.png",
-            "alt": "Informatik Graph 1"
+            "title": "Average Grade",
+            "src": "graphs/Info/NoContext_ZeroShot_WrongImplementation_average_grade.png",
+            "alt": "NoContext_ZeroShot_WrongImplementation average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/Info/heatmaps/NoContext_ZeroShot_WrongImplementation_heatmap.png",
+            "alt": "NoContext_ZeroShot_WrongImplementation heatmap"
           }
         ],
-        "prompt": "Prompts/Info/NoContext_ZeroShot_WrongImplemetation.txt"
+        "prompt": "Prompts/Info/NoContext_ZeroShot_WrongImplementation.txt"
       }
     ]
   },
   "politik": {
     "title": "Politik",
-    "description": "Gesellschaft, Staat und Debatten",
+    "description": "Erörterungen",
     "topics": [
       {
         "key": "politik_graph1",
-        "title": "Graph 1",
+        "title": "China",
         "graphs": [
           {
-            "title": "Graph",
-            "src": "CachedData_PoWi/China/ChatGPT/gesamtnoten_verteilung.png",
-            "alt": "Politik Graph 1"
+            "title": "Average Grade",
+            "src": "graphs/PoWi/China_average_grade.png",
+            "alt": "China average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/PoWi/heatmaps/China_heatmap.png",
+            "alt": "China heatmap"
           }
         ],
         "prompt": "Prompts/PoWi/NoContext_ZeroShot_China"
+      },
+      {
+        "key": "politik_graph2",
+        "title": "Google",
+        "graphs": [
+          {
+            "title": "Average Grade",
+            "src": "graphs/PoWi/Google_average_grade.png",
+            "alt": "Google average grade"
+          },
+          {
+            "title": "Heatmap",
+            "src": "graphs/PoWi/heatmaps/Google_heatmap.png",
+            "alt": "Google heatmap"
+          }
+        ],
+        "prompt": "Prompts/PoWi/NoContext_ZeroShot_Google"
       }
     ]
   }

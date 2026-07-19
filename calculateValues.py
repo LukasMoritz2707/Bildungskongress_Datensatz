@@ -14,10 +14,10 @@ def calculate_highest_value_percentages():
     llm_names = [
         "Gemini",
         "ChatGPT",
-        "DeepSeek",
+        "DeepSeek"
     ]
 
-    base_path = Path("LLMData")
+    base_path = Path("LLMData_Info")
     llm_results = {}
     all_categories = set()
 

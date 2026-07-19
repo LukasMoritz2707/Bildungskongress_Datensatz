@@ -85,8 +85,8 @@ def save_summary(criteria_stats, note_stats, output_file):
 
 
 if __name__ == "__main__":
-    GENERAL_FOLDER = "CachedData_PoWi/Google"
-    LLM = "DeepSeek"
+    GENERAL_FOLDER = "CachedData_PoWi/China"
+    LLM = "ChatGPT"
     JSON_FOLDER = f"{GENERAL_FOLDER}/{LLM}"
 
     OUTPUT_SUMMARY = f"{JSON_FOLDER}/bewertung_summary.json"

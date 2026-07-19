@@ -3,5 +3,10 @@
         "DeepSeek": 1.7,
         "ChatGPT": 1.75,
         "Gemini": 2.15
+    },
+    "NoContext_ZeroShot_WrongImplementation": {
+        "DeepSeek": 4.05,
+        "ChatGPT": 2.1,
+        "Gemini": 2.6
     }
 }

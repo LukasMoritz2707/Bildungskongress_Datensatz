@@ -1,4 +1,10 @@
 {
+    "NoContext_ZeroShot": {
+        "DeepSeek": 3.85,
+        "ChatGPT": 2.68,
+        "Gemini": 3.8,
+        "Grok": 3.9
+    },
     "Sex_Male_ZeroShot": {
         "DeepSeek": 3.95,
         "ChatGPT": 3.2,

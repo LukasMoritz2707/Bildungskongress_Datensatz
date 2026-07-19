@@ -23,18 +23,21 @@ def collect_llm_averages(root_folder):
     Collect average grades for all LLMs across all folders.
     Returns: dict with structure {folder_name: {llm_name: average_grade}}
     """
+
     additional_folders = [
-    #    "NoContext_ZeroShot",
+    #    "NoContext_ZeroShot_BubbleSort_NotWorking",
+    #    "NoContext_ZeroShot_WrongImplementation"
+        "NoContext_ZeroShot",
     #    "NoContext_OneShot_Good",
     #    "NoContext_OneShot_Bad",
-    #    "Sex_Male_ZeroShot",
+    #   "Sex_Male_ZeroShot",
     #    "Sex_Female_ZeroShot",
     #    "Migration_Context_ZeroShot",
-    #    "NoContext_ZeroShot_NoErrors"
-        "NoContext_ZeroShot_BubbleSort_NotWorking"
+        "NoContext_ZeroShot_NoErrors"
+    #    "NoContext_ZeroShot_BubbleSort_NotWorking"
     ]
 
-    llms = ["DeepSeek", "ChatGPT", "Gemini", "Grok"]
+    llms = ["DeepSeek", "ChatGPT", "Gemini"]
 
     results = {folder: {} for folder in additional_folders}
 
@@ -57,8 +60,8 @@ def collect_llm_averages(root_folder):
                 with open(summary_file, "r", encoding="utf-8") as f:
                     data = json.load(f)
 
-                #gesamtnote_data = data.get("sachliche_noten", {}).get("gesamtnote", {})
-                gesamtnote_data = data.get("gesamtnote", {})
+                gesamtnote_data = data.get("sachliche_noten", {}).get("gesamtnote", {})
+                #gesamtnote_data = data.get("gesamtnote", {})
 
                 if gesamtnote_data:
                     average = calculate_average_grade(gesamtnote_data)
@@ -99,7 +102,7 @@ def create_comparison_graph(results, output_file):
     """
     Create a grouped bar chart comparing LLMs across folders.
     """
-    llms = ["DeepSeek", "ChatGPT", "Gemini", "Grok"]
+    llms = ["DeepSeek", "ChatGPT", "Gemini"]
     folders = list(results.keys())
 
     # Prepare data for plotting
@@ -118,7 +121,7 @@ def create_comparison_graph(results, output_file):
     x = np.arange(len(folders))
     width = 0.2
 
-    colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
+    colors = ['#1f77b4', '#ff7f0e', '#2ca02c']
 
     # Plot bars for each LLM
     for i, llm in enumerate(llms):
@@ -151,9 +154,9 @@ def create_comparison_graph(results, output_file):
 
 
 if __name__ == "__main__":
-    ROOT_FOLDER = "CachedData_Info"
-    OUTPUT_GRAPH = os.path.join(ROOT_FOLDER, "llm_comparison.png")
-    OUTPUT_JSON = os.path.join(ROOT_FOLDER, "llm_averages.json")
+    ROOT_FOLDER = "CachedData_German"
+    OUTPUT_GRAPH = os.path.join(ROOT_FOLDER, "llm_comparison_errors.png")
+    OUTPUT_JSON = os.path.join(ROOT_FOLDER, "llm_averages_errors.json")
 
     print("Collecting LLM averages...\n")
     results = collect_llm_averages(ROOT_FOLDER)

@@ -4,11 +4,12 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-BASE_DIR = Path("CachedData_PoWi")
+BASE_DIR = Path("CachedData_Info")
 OUTPUT_DIR = Path("graphs")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 MODEL_NAMES = ["ChatGPT", "Gemini", "DeepSeek"]
+
 
 def compute_average_grade(json_path):
     with open(json_path, "r", encoding="utf-8") as f:
@@ -17,19 +18,17 @@ def compute_average_grade(json_path):
     total = 0
     count = 0
 
-    for key, value in data.items():
-        # Skip nested sections like "sachliche_noten"
-        if not isinstance(value, dict):
-            continue
-        if key == "sachliche_noten":
-            continue
-
-        for grade_str, num in value.items():
+    # Use ONLY the "gesamtnote" section
+    if "gesamtnote" in data and isinstance(data["gesamtnote"], dict):
+        for grade_str, num in data["gesamtnote"].items():
             grade = int(grade_str)
             total += grade * num
             count += num
 
-    return total / count if count > 0 else None
+    average = total / count if count > 0 else None
+    return average
+
+
 
 def collect_subject_averages(subject_folder):
     averages = {}
@@ -57,7 +56,7 @@ def plot_subject(subject_folder, averages):
                      ha='center', va='bottom', fontsize=10)
 
     plt.tight_layout()
-    out_path = OUTPUT_DIR / f"{subject_folder}_average_grade.png"
+    out_path = OUTPUT_DIR/"Info"/f"{subject_folder}_average_grade.png"
     plt.savefig(out_path, dpi=200)
     plt.close()
     print(f"Saved: {out_path}")

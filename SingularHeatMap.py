@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-BASE_DIR = Path("CachedData_German")
+BASE_DIR = Path("CachedData_Info")
 OUTPUT_DIR = Path("graphs")
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -13,10 +13,8 @@ MODEL_NAMES = ["ChatGPT", "Gemini", "Grok", "DeepSeek"]
 
 CRITERIA = [
     "1_1",
-    "2_1", "2_2", "2_3", "2_4",
-    "3_1", "3_2", "3_3", "3_4", "3_5", "3_6",
-    "4_1", "4_2",
-    "5_1", "5_2", "5_3",
+    "2_1", "2_2",
+    "3_1", "3_2", "3_3", "3_4"
 ]
 
 def load_json(path):
