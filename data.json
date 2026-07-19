@@ -18,7 +18,7 @@
             "alt": "Migration_Context_ZeroShot heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_Context_Migration.txt"
+        "prompt": "Prompts/German/Prompt_Context_Migration"
       },
       {
         "key": "NoContext_OneShot_Bad",
@@ -35,7 +35,7 @@
             "alt": "NoContext_OneShot_Bad heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_OneShot_Bad.txt"
+        "prompt": "Prompts/German/Prompt_OneShot_Bad"
       },
       {
         "key": "NoContext_OneShot_Good",
@@ -52,7 +52,7 @@
             "alt": "NoContext_OneShot_Good heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_OneShot_Good.txt"
+        "prompt": "Prompts/German/Prompt_OneShot_Good"
       },
       {
         "key": "NoContext_ZeroShot",
@@ -69,7 +69,7 @@
             "alt": "NoContext_ZeroShot heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_NoContext.txt"
+        "prompt": "Prompts/German/Prompt_NoContext"
       },
       {
         "key": "NoContext_ZeroShot_NoErrors",
@@ -86,7 +86,7 @@
             "alt": "NoContext_ZeroShot_NoErrors heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_NoContext_NoErrors.txt"
+        "prompt": "Prompts/German/Prompt_NoContext_NoErrors"
       },
       {
         "key": "Sex_Female_ZeroShot",
@@ -103,7 +103,7 @@
             "alt": "Sex_Female_ZeroShot heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_Context_Sex_Female.txt"
+        "prompt": "Prompts/German/Prompt_Context_Sex_Female"
       },
       {
         "key": "Sex_Male_ZeroShot",
@@ -120,7 +120,7 @@
             "alt": "Sex_Male_ZeroShot heatmap"
           }
         ],
-        "prompt": "Prompts/German/Prompt_Context_Sex_Male.txt"
+        "prompt": "Prompts/German/Prompt_Context_Sex_Male"
       }
     ]
   },
@@ -143,7 +143,7 @@
             "alt": "NoContext_ZeroShot_BubbleSort_NotWorking heatmap"
           }
         ],
-        "prompt": "Prompts/Info/NoContext_ZeroShot_BubbleSort_NotWorking.txt"
+        "prompt": "Prompts/Info/NoContext_ZeroShot_BubbleSort_NotWorking"
       },
       {
         "key": "NoContext_ZeroShot_WrongImplementation",
@@ -160,7 +160,7 @@
             "alt": "NoContext_ZeroShot_WrongImplementation heatmap"
           }
         ],
-        "prompt": "Prompts/Info/NoContext_ZeroShot_WrongImplementation.txt"
+        "prompt": "Prompts/Info/NoContext_ZeroShot_WrongImplementation"
       }
     ]
   },
